@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="points" sid="5622108417395042" static="0" type="number">0</variable>
+        <variable constant="0" name="gameon" sid="9204500482062337" static="0" type="number">1</variable>
+        <event-block sid="7799919827147621">
+            <conditions>
+                <condition id="2" name="Key is down" sid="2424208778190203" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="1912116793016505" type="Sprite">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">13</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4075069740672484">
+            <conditions>
+                <condition id="2" name="Key is down" sid="8765162288188317" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="8188529939840137" type="Sprite">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">13</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8271389960458342">
+            <conditions>
+                <condition id="0" name="On click" sid="193720483449087" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8382935398171883" type="Sprite">
+                    <param id="0" name="Object">Sprite2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="7294768166938742" type="Sprite2">
+                    <param id="0" name="X">mouse.X</param>
+                    <param id="1" name="Y">mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="898188292104717">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9076983926850611" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6483560511314951" type="Sprite5">
+                    <param id="0" name="X">mouse.X</param>
+                    <param id="1" name="Y">mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1636281376760199" title="enemys">
+            <sub-events>
+                <event-block sid="6013049967475112">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="857452975678867" type="System">
+                            <param id="0" name="Interval (seconds)">1.05</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9901358826564773" type="System">
+                            <param id="0" name="Object to create">Sprite3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">1000</param>
+                            <param id="3" name="Y">random(10,540)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="7115839152006242">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2356369591336801" type="System">
+                    <param id="0" name="Interval (seconds)">random(1,2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="3207108272163671" type="Sprite3">
+                    <param id="0" name="Object">Sprite4</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="1124340796071503" type="Sprite4">
+                    <param id="0" name="X">sprite.X</param>
+                    <param id="1" name="Y">sprite.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group collapsed="1" description="" sid="3458019234816594" title="collision" />
+        <event-block sid="8330968682645036">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4185654190774527" type="Sprite2">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4865986037498044" type="Sprite2" />
+                <action id="-9" name="Destroy" sid="4039808805600655" type="Sprite4" />
+            </actions>
+        </event-block>
+        <event-block sid="3041733049563918">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5851453315130953" type="Sprite2">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9546355840453426" type="Sprite2" />
+                <action id="-9" name="Destroy" sid="8272722816251535" type="Sprite3" />
+                <action id="-10" name="Add to" sid="8090286818940817" type="System">
+                    <param id="0" name="Variable">points</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9821664337568151">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4555315780651582" type="Sprite4">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="707680360032212" type="Sprite2" />
+                <action id="-9" name="Destroy" sid="7901299934752375" type="Sprite4" />
+            </actions>
+        </event-block>
+        <event-block sid="9249118516515487">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2796834024256099" type="Sprite4">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3729588728220715" type="Sprite4" />
+                <action id="-9" name="Destroy" sid="9873419709515908" type="Sprite" />
+                <action id="-9" name="Set value" sid="4602943838792019" type="System">
+                    <param id="0" name="Variable">gameon</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9197923782855905" title="game over">
+            <sub-events>
+                <event-block sid="3572488750784906">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="119351401430702" type="System">
+                            <param id="0" name="Variable">gameon</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5311212260259901" type="Sprite6">
+                            <param id="0" name="X">130</param>
+                            <param id="1" name="Y">300</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="2731744643742921" type="Sprite7">
+                            <param id="0" name="X">320</param>
+                            <param id="1" name="Y">400</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5355969058366822">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="9272712908739697" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Sprite7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="1124763737756318" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1784747298044701">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2378932850947737" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="1476814763136763" type="System" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="6945114581908582" title="scorig">
+            <sub-events>
+                <event-block sid="9157399597531206">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="3712148389514578" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="9460313080119664" type="Text">
+                            <param id="0" name="Text">&quot;points:&quot;&amp;points</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta description="Somos una p&aacute;gina web dedicada a la busqueda de nuevas formas de convertir basura clasica de los hogares en arte.
+		Compuesto por arte y dos de vida" />
+		<title>AO2 Efectos positivos del cambio climático en el turismo.</title>
+		<link rel="stylesheet" type="text/css" href="art_stylesheet.css" /> /* Hoja de estilo */
+		<link rel="stylesheet" type="text/css" href="craftsyle.css" />
+		<LINK REL=StyleSheet HREF="style2.css" TITLE="Contemporaneo">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> /* Icono de pestaña */
+	</head>
+
+	<body>		
+		<!-- Cabecera -->
+		<header id="header">
+			<div id="logo">
+				<a href="hoome.html"><img src="logo_zps33d8cece.png" width="250" height="130"></a>
+			</div>
+			
+			<div id="slogan">
+				<img src="sloganespantildeol_zpsf98a7d68.png" width="100%" height="30px">
+			</div>
+			
+			<div id="tex">
+				<ul class="tex">
+					<li><a href="">Change Lenguage</a>
+						<ul>
+							<li><a href="hoome.html"><img src="EnglandFlag_4.jpg" width="15px" height="10px">English</a></li>
+							<li><a href="inicio.html"><img src="SPAN0002.GIF" width="15px" height="10px">Espa�ol</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- Barra de navegacion -->
+		<nav id="navy">
+			<ul class="nav">
+				<li><a href="hoome.html">Home</a></li>
+				<li><a href="infoi.html">Info</a>
+					<ul>
+						<li><a href="noticiasingles.html">News</a></li>
+						<li><a href="informacioningles.html">Information</a></li>
+					</ul>
+				</li>
+				
+
+				<li><a href="areacreativaingles.html">Crafting</a>
+					<ul>
+						<li><a href="areacreativaingles.html">Tutorias</a></li>
+						<li><a href="apoyandoingles.html">Suporting Talent</a></li>
+					</ul>
+				</li>
+<li><a href="juegospingles.html">Games</a>
+					<ul>
+<li><a href="juegosingles.html">Recolector AO2</a></li>
+
+<li><a href="Juego/indexingles.html">Recolector Espacial</a></li>
+<li><a href="juego2/destructor de basura/juego2ingles.html">Destructor de basura</a></li>
+<li><a href="Reciclador/indexingles.html">Reciclador</a></li>
+
+					</ul>
+				</li>				
+				</li>
+				<li><a href="centrosingles.html">Collection Centers</a>
+					<ul>
+						<li><a href="centrosingles.html">Map</a></li>
+						<li><a href="contactosingles.html">Contacts</a></li>
+					</ul>
+				</li>
+				
+
+<li><a href="whoweare.html">Who we are</a>
+<ul>
+<li><a href="contactanosingles.html">contact us</a></li>
+
+			</ul>
+</li>
+		</nav>
+
+		<!-- Secion central -->
+		<div id="section">
+			<div id="Flash">
+				
+			</div>
+
+			<div id="Bloque_Textonot2">										
+			</div>
+
+			<div id="Bloque_Textoovernot2">						
+			</div>
+
+			<div id="textosomos">
+				<center><h1><p><blockquote>AO2 on Expotec.</blockquote></p></h1></center>
+				<p><blockquote>Expotec is a cientific fair in which the students in their different specialties such as electromechanical, electronics, graphic design, and computer design are in different buildings on Don Bosco defending there proyect.
+This year on fair Expotec 2013, the draft AO2, will be performing in the building of computing contesting against many other projects are invited to see both our project and the other projects I hope.</blockquote></p>
+					<p><blockquote><center><img src="aoi.png"></center>
+</blockquote></p>
+				</div>
+
+		</div>
+		<!-- Barra derecha -->
+		<div id="aside">
+			<div id="userimage">
+				<img src="profile.PNG" height="150px" width="55px">
+			</div>
+			<div id="userdata">
+			</div>
+				
+		</div>
+
+		<!-- Barra izquierda -->
+		<div id="face">
+			<div id="imgop">
+				<img src="Sin título-2 (2).png" width="50px" height="50px">
+			</div>
+			<a href="https://www.facebook.com/CompuestoAO2">
+				<div class="imglink">
+					<img src="51515151515.png" width="50px" height="50px">
+				</div>
+			</a>
+		</div>
+		<div id="twitter">
+			<div id="imgop">
+				<img src="Sin título-3 (2).png" width="50px" height="50px">
+			</div>
+			<a href="https://www.twitter.com/CompuestoAO2">
+				<div class="imglink">
+					<img src="51515151515f.png" width="50px" height="50px">
+				</div>
+			</a>
+		</div>
+		<div id="google">
+			<div id="imgop">
+				<img src="Sin título-1 (2).png" width="50px" height="50px">
+			</div>
+			<a href="https://plus.google.com/112733999138309044824/posts">
+				<div class="imglink">
+					<img src="51515151515e.png" width="50px" height="50px">
+				</div>
+			</a>
+
+		</div>
+
+		<!-- Pie de Pagina -->
+		<footer id="foot">
+			<p ALIGN=center><a href="hoome.html">Home</a> | <a href="news.html">Info</a> | <a href="artb.html">Crafting</a> | <a href="game.html">Games</a> | <a href="Centros de Acopio">Collecting Center</a> | <a href="Whoweare.html">Who we are</a></p>
+			<P ALIGN=center><b>We are a website dedicated to finding new ways to turn household trash classic in art.
+		Compound of life and art</b></p>
+			
+				<P ALIGN=center><b>AO2� All Rights Reserved| 2013</b></p>
+		</footer>
+															
+
+	</body>
+
+
+</html>

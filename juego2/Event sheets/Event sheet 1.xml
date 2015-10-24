@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="9457190800238567">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4091549590514352" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="2905332857905855" type="Sprite">
+                    <param id="0" name="X">Mouse.X</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3843535453401952">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9215849798334759" type="Sprite2">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="8540839233313478" type="Sprite3" />
+                <action behavior="Solid" id="0" name="Set enabled" sid="4522758569576716" type="Sprite3">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3007284776320198">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="291058886436694" type="Sprite2">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7452579997834473" type="Sprite2">
+                    <param id="0" name="Angle">270+75*(Sprite2.X-Sprite.X)/(Sprite.Width/2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="905562179121405">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3529594042423931" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3713182595066136" type="pause">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="4942541715197738" type="daleP">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="956677716478747" type="gameOver">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792713239352188">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9996606711283479" type="Keyboard">
+                    <param id="0" name="Key">80 (P)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="2562966515814505" type="System">
+                    <param id="0" name="Time scale">1- timescale</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7061150297913867" type="pause">
+                    <param id="0" name="Opacity">100-self.Opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8097707609806312" type="daleP">
+                    <param id="0" name="Opacity">100- Self.Opacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2484236039046279">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9092076314022665" type="Keyboard">
+                    <param id="0" name="Key">82 (R)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="854486126520749" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="1661397978152667">
+            <conditions>
+                <condition id="1" name="On any click" sid="5473252429130817" type="Mouse" />
+                <condition behavior="Bullet" id="0" name="Compare speed" sid="1775083621068253" type="Sprite2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="1613173811347015" type="Sprite2">
+                    <param id="0" name="Speed">200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6316895934799181">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="4285900124073371" type="System">
+                    <param id="0" name="First value">Sprite3.Count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="5367994157579162">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="6362345658774759" type="System">
+                    <param id="0" name="First value">Sprite2.Count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="659247478742536" type="System">
+                    <param id="0" name="Layout">&quot;perdio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="97602749930982">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9369866177110472" type="Sprite2">
+                    <param id="0" name="Object">barraperdio</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2974733363938566" type="Sprite2" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

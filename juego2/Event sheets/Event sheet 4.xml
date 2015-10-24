@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 4</name>
+    <events>
+        <event-block sid="7510716282668084">
+            <conditions>
+                <condition id="2" name="Key is down" sid="8227862188802368" type="Keyboard">
+                    <param id="0" name="Key">82 (R)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7398047358220701" type="System">
+                    <param id="0" name="Layout">nivel</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
